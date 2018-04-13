@@ -75,7 +75,7 @@ def user_is_active(timestamp, duration, file):
         ...
     """
     with open(file, "a") as cache:
-        cache.write("%s %s"%(timestamp, duration))
+        cache.write("%s %s\r\n"%(timestamp, duration))
     
 
 def kbevent(event):
